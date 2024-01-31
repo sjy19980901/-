@@ -62,7 +62,7 @@
 
 
     function update(){
-        obsSleep(2)
+        obsSleep(4)
         .then(() => obsClick('button[data-testid="ShipOnYourOwn"]',1,"点击第一步"))
         .then(() => obsClick('button[data-testid="AutoSmartOffersButton"]',2,"点击第二步"))
         .then(() => obsClick('button[data-testid="ListButton"]',5,"点击第三步"))
