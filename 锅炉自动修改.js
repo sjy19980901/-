@@ -39,7 +39,8 @@
             page = 1;
         }else{
             let idx = href.indexOf("page=") + 5;
-            let str = href.substring(idx,idx+1);
+            let endIdx = href.indexOf("&");
+            let str = href.substring(idx,endIdx);
             page = parseInt(str);
         }
     }
